@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+	<!-- Chamada da função Javascript - JSON(JavaScript Object Notation)
+	JSON -> JSON é basicamente um formato leve de troca de informações/dados entre sistemas 
+	-->
+	<script type="text/javascript" src="./funcoes.js"></script> 
+	
+	<link rel="stylesheet" href="./style.css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Outfit&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+    <h2 id="cabecalho"> Cadastro de clientes </h2>
+	    
+		<!-- Formulário para cadastro dos clientes -->
+	<form id="frmCadastro">
+
+		<label for="txtCodigo">Código:</label>
+		<input type="text" id="txtCodigo" disabled/><br>
+
+		<label for="txtNome">Nome:</label>
+		<input type="text" id="txtNome" required /><br>
+
+		<label for="txtTelefone">Telefone:</label>
+		<input type="text" id="txtTelefone" required/><br>
+
+		<label for="txtEmail">Email:</label>
+		<input type="text" id="txtEmail" required/><br>
+
+		<!-- Old code
+		<label for="txtStatus">Status:</label>
+		<input type="text" id="txtStatus" disabled /><br> 
+		-->
+
+        <label for="txtStatus" required >Status:</label>
+        <select id="txtStatus">
+            <label>Selecione o status</label>
+            <option value="Aberto" id="aberto">Aberto</option>
+            <option value="Em andamento" id="andamento">Em andamento</option>
+            <option value="Fechado" id="fechado">Fechado</option>
+        </select>
+        <br>
+
+
+		<label for="txtDtCad">Data Cad:</label>
+		<input type="date" id="txtDtCad" required/><br>
+
+		<label for="txtHora">Hora Cad:</label>
+		<input type="time" id="txtHora" required/><br>
+
+		<input type="submit" value="Salvar" id="btnSalvar"/>
+			
+
+	</form>
+	<!-- Tabela para listar os clientes com possibilidade de alterar/excluir -->
+	<table id="tblListar" class="styled-table">
+
+	</table>
+	<p id="prgfrm">
+	</p>
+</body>
+</html>
