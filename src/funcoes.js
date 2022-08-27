@@ -91,7 +91,7 @@ $(function(){
 			// Formatar data para o format brasileiro dia, mes, ano
 			var dtfinal = cli.DtCad.substring(8,10) + "/" +cli.DtCad.substring(5,7)  +"/" +cli.DtCad.substring(0,4);
 		  	$("#tblListar tbody").append("<tr>"+
-				"	<td><img src='img/botaoEdit.png' alt='"+i+"' class='btnEditar'/><img src='img/botaoDelete.png' alt='"+i+"' class='btnExcluir'/></td>" + 
+				"	<td><img src='./src/img/botaoEdit.png' alt='"+i+"' class='btnEditar'/><img src='./src/img/botaoDelete.png' alt='"+i+"' class='btnExcluir'/></td>" + 
 				"<td>"+cli.Codigo+"</td>" + 
 				"<td>"+cli.Nome+"</td>" + 
 				"<td>"+cli.Telefone+"</td>" + 
